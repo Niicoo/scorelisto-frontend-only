@@ -1,0 +1,61 @@
+#div_waveform {
+  background: var(--background-color-primary);
+}
+
+#div_buttons {
+  /*border-top:3px gray solid;*/
+  background: linear-gradient(to bottom, var(--background-color-primary), rgba(0,0,0,0));
+  position: relative;
+}
+
+#div_filenotloaded {
+  min-height:128px;
+  position:relative;
+}
+#div_filenotloaded p {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+
+button {
+  margin:1rem;
+  border:none;
+}
+#play_button, #pause_button, #download_button{
+  height:2rem;
+  width:2rem;
+}
+#download_button {
+  position: absolute;
+  top:0;
+  left:0;
+}
+#play_button {
+  background:transparent url('/assets/img/play_white.svg') center center no-repeat;
+}
+#pause_button {
+  background:transparent url('/assets/img/pause_white.svg') center center no-repeat;
+}
+#play_button:hover {
+  background:transparent url('/assets/img/play_colored.svg') center center no-repeat;
+}
+#pause_button:hover {
+  background:transparent url('/assets/img/pause_colored.svg') center center no-repeat;
+}
+
+#download_button {
+  background:transparent url('/assets/img/download_white.svg') center center no-repeat;
+}
+#download_button:hover {
+  background:transparent url('/assets/img/download_colored.svg') center center no-repeat;
+}
+
+/**************************************************/
+/* GENERIC CSS */
+.display-none {
+  display:none;
+}

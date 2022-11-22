@@ -1,0 +1,46 @@
+#container-header {
+	margin-bottom: 1rem;
+}
+#container-parameters {
+	background: var(--background-color-primary);
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+#container-buttons {
+	background: var(--background-color-primary);
+	padding-bottom: 1rem;
+}
+
+.col-etape {
+	border-bottom: solid 0.25rem var(--background-color-primary);
+	font-weight:bold;
+	padding-bottom:0.25rem;
+}
+.col-etape-selected {
+	color: var(--theme-color-primary);
+	text-shadow: 1px 1px 5px var(--theme-color-primary);
+	border-bottom: solid 0.25rem var(--theme-color-primary);
+}
+
+@media (min-width: 1px) {
+  #title_step1:after {
+  	content:"Step 1";
+  }
+  #title_step2:after {
+  	content:"Step 2";
+  }
+  #title_step3:after {
+  	content:"Step 3";
+  }
+}
+@media (min-width: 576px) {
+  #title_step1:after {
+  	content:"Step 1: Pitch Detection";
+  }
+  #title_step2:after {
+  	content:"Step 2: Step Detection";
+  }
+  #title_step3:after {
+  	content:"Step 3: Rhythm Detection";
+  }
+}

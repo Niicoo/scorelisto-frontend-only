@@ -1,0 +1,48 @@
+
+<div id="container-header" class="container-fluid">
+  <div class="row">
+    <div class="col col-etape text-center" [class.col-etape-selected]="viewState === 'pitch'">
+      <span id="title_step1"></span>
+    </div>
+    <div class="col col-etape text-center" [class.col-etape-selected]="viewState === 'step'">
+      <span id="title_step2"></span>
+    </div>
+    <div class="col col-etape text-center" [class.col-etape-selected]="viewState === 'rhythm'">
+     <span id="title_step3"></span>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="container-parameters" class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div *ngIf="viewState === 'pitch'">
+        <app-pitch-parameters></app-pitch-parameters>
+      </div>
+      <div *ngIf="viewState === 'step'">
+        <app-step-parameters></app-step-parameters>
+      </div>
+      <div *ngIf="viewState === 'rhythm'">
+        <app-rhythm-parameters></app-rhythm-parameters>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="container-buttons"  class="container-fluid">
+  <div class="row">
+    <div class="col-4" style="text-align: left;">
+      <button class="button_theme" id="button_back" (click)="onClickOnPreviousStep()" [disabled]="disabledBackButton">BACK</button>
+    </div>
+    <div class="col-4" style="text-align: center;">
+      <button class="button_theme" id="button_run" (click)="onclickOnRun()" [disabled]="disabledRunButton">RUN</button>
+    </div>
+    <div class="col-4" style="text-align: right;">
+      <button class="button_theme" id="button_next" (click)="onClickOnNextStep()" [disabled]="disabledNextButton">NEXT</button>
+    </div>
+  </div>
+</div>

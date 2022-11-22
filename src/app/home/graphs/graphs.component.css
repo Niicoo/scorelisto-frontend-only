@@ -1,0 +1,18 @@
+.chart {
+	padding-top:1rem;
+}
+.display-none {
+  display:none;
+}
+
+.form-check-input {
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:0;
+	margin-left:0.5rem;
+	height:100%;
+	width:2rem;
+}
+.form-check-label {
+	padding-left:2.5rem;
+}

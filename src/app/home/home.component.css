@@ -1,0 +1,58 @@
+#score-section {
+  margin-bottom:3rem;
+}
+#file-section {
+  margin-top:3rem;
+}
+
+
+.section-container {
+  border-top:3px solid var(--theme-color-primary);
+  background-color:var(--background-color-secondary);
+  padding-bottom:1rem;
+  padding-top:1rem;
+}
+
+.section-container-item {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.nav-link {
+  cursor:pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color:var(--background-color-secondary);
+}
+.nav-link-selected {
+  background-color:var(--theme-color-primary);
+}
+
+/* Add padding and margin between items */
+#file-section .section-container .section-container-item:first-child {
+  margin-bottom:1rem;
+}
+
+
+@media (min-width: 576px) {
+  section {
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  .section-container-item {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/**************************************************/
+/* GENERIC CSS */
+.display-none {
+  display:none;
+}
+.separator_row {
+  height:3px;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  background:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0));
+}

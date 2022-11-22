@@ -1,0 +1,25 @@
+<div class="container-fluid">
+	<div class="row" id="row_progress">
+		<div id="pitch_step" class="col-4 step text-center" [class.stepCompleted]="state === 'pitch' || state === 'step' || state === 'rhythm'">
+			<div id="progressbar_pitch" class="progressbarperso"></div>
+			<div class="step-title"><span>1</span></div>
+		</div>
+		<div id="step_step" class="col-4 step text-center" [class.stepCompleted]="state === 'step' || state === 'rhythm'">
+			<div id="progressbar_step" class="progressbarperso"></div>
+			<div class="step-title"><span>2</span></div>
+		</div>
+		<div id="rhythm_step" class="col-4 step text-center" [class.stepCompleted]="state === 'rhythm'">
+			<div id="progressbar_rhythm" class="progressbarperso"></div>
+			<div class="step-title"><span>3</span></div>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<h2>{{progression_total}}</h2>
+	</div>
+</div>
+
+
+
+
+

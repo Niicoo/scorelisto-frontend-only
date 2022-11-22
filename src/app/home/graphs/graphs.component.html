@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<form [formGroup]="graphOptionsForm">
+		<div class="row">
+			<div class="col">
+				<input type="checkbox" class="form-check-input" formControlName="plotEnergy" id="checkbox_energy">
+				<label class="form-check-label" for="checkbox_energy">Plot Energy</label>
+			</div>
+			<div class="col">
+				<input type="checkbox" class="form-check-input" formControlName="plotStep" id="checkbox_step">
+				<label class="form-check-label" for="checkbox_step">Plot Step Results</label>
+			</div>
+			<div class="col">
+				<input type="checkbox" class="form-check-input" formControlName="plotPitch" id="checkbox_pitch">
+				<label class="form-check-label" for="checkbox_pitch">Plot Pitch Results</label>
+			</div>
+		</div>
+	</form>
+	<div id="chart_row" class="row">
+		<div class="col-12 chart pl-0 pr-0" #chartPitch></div>
+		<div class="col-12 chart pl-0 pr-0" [class.display-none]="!plotEnergy" #chartEnergy></div>
+	</div>
+</div>

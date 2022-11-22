@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4894"
+   viewBox="0 0 77.243 60.531"
+   version="1.1"
+   sodipodi:docname="mail_white.svg"
+   width="77.242996"
+   height="60.530998"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="8.7665076"
+     inkscape:cx="32.496807"
+     inkscape:cy="33.288387"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g820" />
+  <g
+     id="layer1"
+     transform="translate(-350.52,-524.6)">
+    <g
+       id="g820">
+      <g
+         id="g868" />
+      <g
+         id="g934">
+        <path
+           style="fill:#ffffff;fill-opacity:1"
+           d="M 7.0371094 0 C 5.8803094 0 4.8110094 0.2743 3.8496094 0.75 C 3.8496094 0.75 7.9942394 5.60523 10.068359 8.03125 C 19.583749 19.16104 38.630859 41.40625 38.630859 41.40625 L 67.615234 7.0136719 C 67.615234 7.0136719 69.821191 4.4832363 73.175781 0.84765625 C 73.420181 -0.22664375 69.566506 0.15438688 69.447266 0.12304688 L 7.0371094 0 z M 1.0683594 3.21875 C 0.39625937 4.26855 0.005859375 5.51115 0.005859375 6.84375 L 0.005859375 53.6875 C 0.005859375 54.8433 0.30215937 55.922 0.81835938 56.875 L 26.037109 32.40625 L 6.3496094 9.40625 L 1.0683594 3.21875 z M 76.210938 3.2304688 L 70.929688 9.4179688 L 51.242188 32.417969 L 76.460938 56.886719 C 76.977138 55.933719 77.273438 54.855019 77.273438 53.699219 L 77.273438 6.8554688 C 77.273438 5.5228688 76.883038 4.2802688 76.210938 3.2304688 z M 28.318359 35.03125 L 3.2246094 59.40625 C 4.3295094 60.10355 5.6160094 60.53125 7.0371094 60.53125 L 70.255859 60.53125 C 71.685159 60.53125 72.990909 60.11115 74.099609 59.40625 L 48.974609 35.03125 L 40.443359 44.96875 C 39.703059 45.82745 37.527409 45.82745 36.787109 44.96875 L 28.318359 35.03125 z "
+           transform="translate(350.52,524.6)"
+           id="rect4732-9-9-6" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2013-11-22T07:55:39</dc:date>
+        <dc:description>A Love Letter Pictogram\n</dc:description>
+        <dc:source>https://openclipart.org/detail/188986/love-letter-pictogram-by-libberry-188986</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>libberry</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>envelope</rdf:li>
+            <rdf:li>heart</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>letter</rdf:li>
+            <rdf:li>love</rdf:li>
+            <rdf:li>love letter</rdf:li>
+            <rdf:li>mail</rdf:li>
+            <rdf:li>pictogram</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,86 @@
+
+
+#div_percentage_value {
+	margin-top: 1rem;
+}
+.step {
+	position:relative;
+	padding-left:0;
+	padding-right:0;
+	font-weight: bold;
+	border: 3px solid var(--background-color-primary);
+}
+.stepCompleted {
+	border:none;
+	box-shadow: 0px 0px 10px 5px var(--theme-color-primary);
+}
+span {
+	position:absolute;
+	width:100%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+#row_progress {
+	height:3rem;
+	background-color:rgba(0,0,0,0.5);
+	margin-bottom: 1rem;
+}
+
+
+h2 {
+	font-weight: bold;
+	text-shadow: 1px 1px 5px var(--text-color);
+}
+
+.progressbarperso {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:0%;
+	background-color:var(--theme-color-primary);
+}
+.step-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+
+@media (min-width: 576px) {
+	.step .step-title span {
+		display: none;
+	}
+	#pitch_step .step-title:after {
+		content:"Step 1";
+	}
+	#step_step .step-title:after {
+		content:"Step 2";
+	}
+	#rhythm_step .step-title:after {
+		content:"Step 3";
+	}
+	.step .step-title:after {
+		position:absolute;
+		width:100%;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (min-width: 992px) {
+	#pitch_step .step-title:after {
+		content:"Step 1: Pitch Detection";
+	}
+	#step_step .step-title:after {
+		content:"Step 2: Step Detection";
+	}
+	#rhythm_step .step-title:after {
+		content:"Step 3: Rhythm Detection";
+	}
+}

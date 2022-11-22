@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div id="ScoreDiv"></div>
+</div>
+<div class="container-fluid mt-3">
+  <div class="row justify-content-center">
+  	<h4 style="font-weight: bold;text-shadow: 1px 1px 5px var(--text-color);">Download</h4>
+  </div>
+  <div class="row justify-content-center">
+    <button class="button_theme" (click)="converterService.download_musicxml()" [disabled]="currentState !== 'rhythm'">MusicXML (.xml)</button>
+    <button class="button_theme" (click)="converterService.download_midi()" [disabled]="currentState !== 'rhythm'">Midi (.mid)</button>
+    <button class="button_theme" (click)="converterService.download_midinorythm()" [disabled]="currentState !== 'rhythm'">Midi[no rhythm] (.mid)</button>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div id="div_waveform">
+  <div [class.display-none]="!isSoundReady">
+    <div id="waveform" (window:resize)="onResizeWaveform($event)"></div>
+  </div>
+  <div [class.display-none]="isSoundReady">
+    <div id="div_filenotloaded" class="row justify-content-center">
+    	<p>File Not Loaded</p>
+    </div>
+  </div>
+</div>
+
+<div id="div_buttons" class="container-fluid">
+  <div class="row justify-content-center">
+  <button id="play_button" *ngIf="!wavesurfer.isPlaying()" (click)="wavesurfer.playPause()"></button>
+  <button id="pause_button" *ngIf="wavesurfer.isPlaying()" (click)="wavesurfer.playPause()"></button>
+  </div>
+  <button id="download_button" (click)="clickDownloadButton()"></button>
+</div>

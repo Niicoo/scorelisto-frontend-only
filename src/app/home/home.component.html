@@ -1,0 +1,102 @@
+<section id="file-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center nav-link" (click)="clickOnUpload()" [class.nav-link-selected]="!isUploadCollapsed">
+        <img src="/assets/img/upload_white.svg" height="30" width="30">
+        upload from computer
+      </div>
+      <div class="col-6 text-center nav-link" (click)="clickOnRecord()" [class.nav-link-selected]="!isRecordCollapsed">
+        <img src="/assets/img/record_white.svg" height="30" width="30">
+        online recording
+      </div>
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="section-container-item">
+      <div [class.display-none]="isUploadCollapsed">
+        <app-file-input></app-file-input>
+      </div>
+      <div [class.display-none]="isRecordCollapsed">
+        <app-recorder></app-recorder>
+      </div>
+    </div>
+    <div class="section-container-item">
+      <app-sound-player></app-sound-player>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center" style="margin-top:3rem; margin-bottom:3rem;">
+    <img src="/assets/img/arrowdown_white.svg" height="60" width="60">
+  </div>
+</div>
+
+<section id="converter-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center nav-link" (click)="clickOnDirect()" [class.nav-link-selected]="!isDirectCollapsed">
+        Direct conversion
+      </div>
+      <div class="col-6 text-center nav-link" (click)="clickOnAdvanced()" [class.nav-link-selected]="!isAdvancedCollapsed">
+        Advanced conversion
+      </div>
+    </div>
+  </div>
+  <div class="section-container">
+    <!-- Direct conversion -->
+    <div class="section-container-item" [class.display-none]="isDirectCollapsed">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <button class="button_theme" (click)="converterService.run_direct_conversion()" [disabled]="currentState === 'init'">CONVERT</button>
+        </div>
+        <div class="row separator_row"></div>
+      </div>
+    </div>
+    <!-- Advanced conversion -->
+    <div class="section-container-item" [class.display-none]="isAdvancedCollapsed">
+      <app-advanced-converter></app-advanced-converter>
+      <div class="row separator_row"></div>
+    </div>
+    <!-- Progression bar -->
+    <div class="section-container-item">
+      <app-progression-bar></app-progression-bar>
+    </div>
+    <!-- Graph in case of advanced conversion -->
+    <div class="section-container-item" [class.display-none]="isAdvancedCollapsed">
+      <div class="row separator_row"></div>
+      <app-graphs></app-graphs>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center" style="margin-top:3rem; margin-bottom:3rem;">
+    <img src="/assets/img/arrowdown_white.svg" height="60" width="60">
+  </div>
+</div>
+
+<section id="score-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center nav-link nav-link-selected">
+        Score
+      </div>
+    </div>
+  </div>
+  <div class="section-container">
+    <app-score-printer></app-score-printer>
+  </div>
+</section>
+
